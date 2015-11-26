@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--Weather View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="WeatherViewController" customModule="TinyWeather" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vrq-73-g91">
+                                <rect key="frame" x="300" y="80" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sDw-Jh-6P5">
+                                <rect key="frame" x="300" y="100" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Tiny Weather" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2mx-Sm-x1H">
+                                <rect key="frame" x="180" y="276" width="241" height="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.46274509803921571" green="0.70980392156862748" blue="0.8666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Vrq-73-g91" secondAttribute="trailing" constant="20" id="Ez8-0a-v05"/>
+                            <constraint firstItem="sDw-Jh-6P5" firstAttribute="top" secondItem="Vrq-73-g91" secondAttribute="bottom" constant="20" id="GOa-T2-FsX"/>
+                            <constraint firstItem="Vrq-73-g91" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="GSE-of-PTC"/>
+                            <constraint firstItem="sDw-Jh-6P5" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="SgU-ay-vsO"/>
+                            <constraint firstItem="2mx-Sm-x1H" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" priority="500" constant="80" id="VBx-p6-MHJ"/>
+                            <constraint firstItem="2mx-Sm-x1H" firstAttribute="top" secondItem="Vrq-73-g91" secondAttribute="top" priority="500" id="XWq-O0-9ne"/>
+                            <constraint firstItem="Vrq-73-g91" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="aI7-Oe-Nqp"/>
+                            <constraint firstItem="2mx-Sm-x1H" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" priority="900" id="cMt-6w-Hsq"/>
+                            <constraint firstItem="2mx-Sm-x1H" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mOQ-Wb-PAE"/>
+                            <constraint firstItem="Vrq-73-g91" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="o8s-Od-bmr"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="sDw-Jh-6P5" secondAttribute="trailing" constant="20" id="uIH-69-qsJ"/>
+                            <constraint firstItem="sDw-Jh-6P5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vsf-0H-D6i"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="XWq-O0-9ne"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="summaryLabel" destination="Vrq-73-g91" id="zkm-T6-Uxk"/>
+                        <outlet property="temperatureLabel" destination="sDw-Jh-6P5" id="63e-pS-nnC"/>
+                        <outlet property="tinyWeatherCenterVerticalConstraint" destination="cMt-6w-Hsq" id="tcg-wA-vvU"/>
+                        <outlet property="tinyWeatherLabel" destination="2mx-Sm-x1H" id="XKR-Ff-SeK"/>
+                        <outlet property="tinyWeatherTopConstraint" destination="VBx-p6-MHJ" id="0bb-lC-6cx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="515" y="428"/>
+        </scene>
+    </scenes>
+</document>
