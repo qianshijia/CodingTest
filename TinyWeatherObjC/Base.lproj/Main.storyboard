@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--WeatherOC View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="WeatherOCViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Tiny Weather" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZLK-wA-XKL">
+                                <rect key="frame" x="181" y="276" width="240" height="48"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QQV-5E-RbV" userLabel="Summary Label">
+                                <rect key="frame" x="300" y="100" width="0.0" height="0.0"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y23-99-TLq" userLabel="Temperature Label">
+                                <rect key="frame" x="300" y="120" width="0.0" height="0.0"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.46274509800000002" green="0.70980392160000005" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZLK-wA-XKL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" priority="900" id="1wi-C3-lFO"/>
+                            <constraint firstItem="ZLK-wA-XKL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2LZ-cD-jpo"/>
+                            <constraint firstItem="Y23-99-TLq" firstAttribute="top" secondItem="QQV-5E-RbV" secondAttribute="bottom" constant="20" id="Lf3-yv-D4H"/>
+                            <constraint firstItem="ZLK-wA-XKL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" priority="500" constant="80" id="hay-IE-I4y"/>
+                            <constraint firstItem="QQV-5E-RbV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tYO-Jh-sJ8"/>
+                            <constraint firstItem="Y23-99-TLq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wlr-yV-RS0"/>
+                            <constraint firstItem="QQV-5E-RbV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="zif-sn-5Du"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="summaryLabel" destination="QQV-5E-RbV" id="0S8-7o-L10"/>
+                        <outlet property="temperatureLabel" destination="Y23-99-TLq" id="al0-6X-m2W"/>
+                        <outlet property="tinyWeatherLabel" destination="ZLK-wA-XKL" id="y5g-7K-jCH"/>
+                        <outlet property="tinyWeatherLabelCenterVerticalConstraint" destination="1wi-C3-lFO" id="6cL-Rr-FYf"/>
+                        <outlet property="tinyWeatherLabelTopSpaceConstraint" destination="hay-IE-I4y" id="2yt-aZ-VTA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

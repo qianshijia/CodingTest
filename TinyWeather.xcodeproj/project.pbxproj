@@ -10,6 +10,16 @@
 		33FA7FCD1C06F2610026FFD7 /* TinyWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FA7FCC1C06F2610026FFD7 /* TinyWeatherTests.swift */; };
 		33FA7FD41C06F3320026FFD7 /* WeatherAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEE60C01C06A5FF00435129 /* WeatherAPIManager.swift */; };
 		33FA7FD51C06F3350026FFD7 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEE60C31C06AFD900435129 /* Models.swift */; };
+		33FA7FDE1C0864610026FFD7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FA7FDD1C0864610026FFD7 /* main.m */; };
+		33FA7FE11C0864610026FFD7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FA7FE01C0864610026FFD7 /* AppDelegate.m */; };
+		33FA7FE71C0864610026FFD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33FA7FE51C0864610026FFD7 /* Main.storyboard */; };
+		33FA7FE91C0864610026FFD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33FA7FE81C0864610026FFD7 /* Assets.xcassets */; };
+		33FA7FEC1C0864610026FFD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33FA7FEA1C0864610026FFD7 /* LaunchScreen.storyboard */; };
+		33FA7FF71C0864610026FFD7 /* TinyWeatherObjCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FA7FF61C0864610026FFD7 /* TinyWeatherObjCTests.m */; };
+		33FA80021C0865360026FFD7 /* WeatherAPIManagerOC.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FA80011C0865360026FFD7 /* WeatherAPIManagerOC.m */; };
+		33FA80061C086C920026FFD7 /* CurrentWeatherInfoModelOC.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FA80051C086C920026FFD7 /* CurrentWeatherInfoModelOC.m */; };
+		33FA800A1C086F360026FFD7 /* LocationManagerOC.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FA80091C086F360026FFD7 /* LocationManagerOC.m */; };
+		33FA800E1C0872FA0026FFD7 /* WeatherOCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FA800D1C0872FA0026FFD7 /* WeatherOCViewController.m */; };
 		7EEE60AE1C06A5B000435129 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEE60AD1C06A5B000435129 /* AppDelegate.swift */; };
 		7EEE60B31C06A5B000435129 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EEE60B11C06A5B000435129 /* Main.storyboard */; };
 		7EEE60B51C06A5B000435129 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EEE60B41C06A5B000435129 /* Assets.xcassets */; };
@@ -28,12 +38,38 @@
 			remoteGlobalIDString = 7EEE60A91C06A5B000435129;
 			remoteInfo = TinyWeather;
 		};
+		33FA7FF31C0864610026FFD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7EEE60A21C06A5B000435129 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33FA7FD91C0864610026FFD7;
+			remoteInfo = TinyWeatherObjC;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		33FA7FCA1C06F2610026FFD7 /* TinyWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TinyWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		33FA7FCC1C06F2610026FFD7 /* TinyWeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinyWeatherTests.swift; sourceTree = "<group>"; };
 		33FA7FCE1C06F2610026FFD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33FA7FDA1C0864610026FFD7 /* TinyWeatherObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinyWeatherObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		33FA7FDD1C0864610026FFD7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		33FA7FDF1C0864610026FFD7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		33FA7FE01C0864610026FFD7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		33FA7FE61C0864610026FFD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		33FA7FE81C0864610026FFD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		33FA7FEB1C0864610026FFD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		33FA7FED1C0864610026FFD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33FA7FF21C0864610026FFD7 /* TinyWeatherObjCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TinyWeatherObjCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		33FA7FF61C0864610026FFD7 /* TinyWeatherObjCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TinyWeatherObjCTests.m; sourceTree = "<group>"; };
+		33FA7FF81C0864610026FFD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33FA80001C0865360026FFD7 /* WeatherAPIManagerOC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WeatherAPIManagerOC.h; path = "API Manager/WeatherAPIManagerOC.h"; sourceTree = "<group>"; };
+		33FA80011C0865360026FFD7 /* WeatherAPIManagerOC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WeatherAPIManagerOC.m; path = "API Manager/WeatherAPIManagerOC.m"; sourceTree = "<group>"; };
+		33FA80041C086C920026FFD7 /* CurrentWeatherInfoModelOC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CurrentWeatherInfoModelOC.h; path = Models/CurrentWeatherInfoModelOC.h; sourceTree = "<group>"; };
+		33FA80051C086C920026FFD7 /* CurrentWeatherInfoModelOC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CurrentWeatherInfoModelOC.m; path = Models/CurrentWeatherInfoModelOC.m; sourceTree = "<group>"; };
+		33FA80081C086F360026FFD7 /* LocationManagerOC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocationManagerOC.h; path = "Location Manager/LocationManagerOC.h"; sourceTree = "<group>"; };
+		33FA80091C086F360026FFD7 /* LocationManagerOC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LocationManagerOC.m; path = "Location Manager/LocationManagerOC.m"; sourceTree = "<group>"; };
+		33FA800C1C0872FA0026FFD7 /* WeatherOCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WeatherOCViewController.h; path = "View Controllers/WeatherOCViewController.h"; sourceTree = "<group>"; };
+		33FA800D1C0872FA0026FFD7 /* WeatherOCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WeatherOCViewController.m; path = "View Controllers/WeatherOCViewController.m"; sourceTree = "<group>"; };
 		7EEE60AA1C06A5B000435129 /* TinyWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinyWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EEE60AD1C06A5B000435129 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7EEE60B21C06A5B000435129 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -48,6 +84,20 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		33FA7FC71C06F2610026FFD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33FA7FD71C0864610026FFD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33FA7FEF1C0864610026FFD7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -73,11 +123,84 @@
 			path = TinyWeatherTests;
 			sourceTree = "<group>";
 		};
+		33FA7FDB1C0864610026FFD7 /* TinyWeatherObjC */ = {
+			isa = PBXGroup;
+			children = (
+				33FA800B1C0872CC0026FFD7 /* View Controllers */,
+				33FA80071C086F1D0026FFD7 /* Location Manager */,
+				33FA80031C086C250026FFD7 /* Models */,
+				33FA7FFF1C0865090026FFD7 /* API Manager */,
+				33FA7FDF1C0864610026FFD7 /* AppDelegate.h */,
+				33FA7FE01C0864610026FFD7 /* AppDelegate.m */,
+				33FA7FE51C0864610026FFD7 /* Main.storyboard */,
+				33FA7FE81C0864610026FFD7 /* Assets.xcassets */,
+				33FA7FEA1C0864610026FFD7 /* LaunchScreen.storyboard */,
+				33FA7FED1C0864610026FFD7 /* Info.plist */,
+				33FA7FDC1C0864610026FFD7 /* Supporting Files */,
+			);
+			path = TinyWeatherObjC;
+			sourceTree = "<group>";
+		};
+		33FA7FDC1C0864610026FFD7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				33FA7FDD1C0864610026FFD7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		33FA7FF51C0864610026FFD7 /* TinyWeatherObjCTests */ = {
+			isa = PBXGroup;
+			children = (
+				33FA7FF61C0864610026FFD7 /* TinyWeatherObjCTests.m */,
+				33FA7FF81C0864610026FFD7 /* Info.plist */,
+			);
+			path = TinyWeatherObjCTests;
+			sourceTree = "<group>";
+		};
+		33FA7FFF1C0865090026FFD7 /* API Manager */ = {
+			isa = PBXGroup;
+			children = (
+				33FA80001C0865360026FFD7 /* WeatherAPIManagerOC.h */,
+				33FA80011C0865360026FFD7 /* WeatherAPIManagerOC.m */,
+			);
+			name = "API Manager";
+			sourceTree = "<group>";
+		};
+		33FA80031C086C250026FFD7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				33FA80041C086C920026FFD7 /* CurrentWeatherInfoModelOC.h */,
+				33FA80051C086C920026FFD7 /* CurrentWeatherInfoModelOC.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		33FA80071C086F1D0026FFD7 /* Location Manager */ = {
+			isa = PBXGroup;
+			children = (
+				33FA80081C086F360026FFD7 /* LocationManagerOC.h */,
+				33FA80091C086F360026FFD7 /* LocationManagerOC.m */,
+			);
+			name = "Location Manager";
+			sourceTree = "<group>";
+		};
+		33FA800B1C0872CC0026FFD7 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				33FA800C1C0872FA0026FFD7 /* WeatherOCViewController.h */,
+				33FA800D1C0872FA0026FFD7 /* WeatherOCViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
 		7EEE60A11C06A5B000435129 = {
 			isa = PBXGroup;
 			children = (
 				7EEE60AC1C06A5B000435129 /* TinyWeather */,
 				33FA7FCB1C06F2610026FFD7 /* TinyWeatherTests */,
+				33FA7FDB1C0864610026FFD7 /* TinyWeatherObjC */,
+				33FA7FF51C0864610026FFD7 /* TinyWeatherObjCTests */,
 				7EEE60AB1C06A5B000435129 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,6 +210,8 @@
 			children = (
 				7EEE60AA1C06A5B000435129 /* TinyWeather.app */,
 				33FA7FCA1C06F2610026FFD7 /* TinyWeatherTests.xctest */,
+				33FA7FDA1C0864610026FFD7 /* TinyWeatherObjC.app */,
+				33FA7FF21C0864610026FFD7 /* TinyWeatherObjCTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -160,6 +285,41 @@
 			productReference = 33FA7FCA1C06F2610026FFD7 /* TinyWeatherTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		33FA7FD91C0864610026FFD7 /* TinyWeatherObjC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33FA7FFD1C0864610026FFD7 /* Build configuration list for PBXNativeTarget "TinyWeatherObjC" */;
+			buildPhases = (
+				33FA7FD61C0864610026FFD7 /* Sources */,
+				33FA7FD71C0864610026FFD7 /* Frameworks */,
+				33FA7FD81C0864610026FFD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TinyWeatherObjC;
+			productName = TinyWeatherObjC;
+			productReference = 33FA7FDA1C0864610026FFD7 /* TinyWeatherObjC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		33FA7FF11C0864610026FFD7 /* TinyWeatherObjCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33FA7FFE1C0864610026FFD7 /* Build configuration list for PBXNativeTarget "TinyWeatherObjCTests" */;
+			buildPhases = (
+				33FA7FEE1C0864610026FFD7 /* Sources */,
+				33FA7FEF1C0864610026FFD7 /* Frameworks */,
+				33FA7FF01C0864610026FFD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				33FA7FF41C0864610026FFD7 /* PBXTargetDependency */,
+			);
+			name = TinyWeatherObjCTests;
+			productName = TinyWeatherObjCTests;
+			productReference = 33FA7FF21C0864610026FFD7 /* TinyWeatherObjCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		7EEE60A91C06A5B000435129 /* TinyWeather */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7EEE60BC1C06A5B000435129 /* Build configuration list for PBXNativeTarget "TinyWeather" */;
@@ -191,6 +351,13 @@
 						CreatedOnToolsVersion = 7.1;
 						TestTargetID = 7EEE60A91C06A5B000435129;
 					};
+					33FA7FD91C0864610026FFD7 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					33FA7FF11C0864610026FFD7 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 33FA7FD91C0864610026FFD7;
+					};
 					7EEE60A91C06A5B000435129 = {
 						CreatedOnToolsVersion = 7.1;
 					};
@@ -211,12 +378,31 @@
 			targets = (
 				7EEE60A91C06A5B000435129 /* TinyWeather */,
 				33FA7FC91C06F2610026FFD7 /* TinyWeatherTests */,
+				33FA7FD91C0864610026FFD7 /* TinyWeatherObjC */,
+				33FA7FF11C0864610026FFD7 /* TinyWeatherObjCTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		33FA7FC81C06F2610026FFD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33FA7FD81C0864610026FFD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33FA7FEC1C0864610026FFD7 /* LaunchScreen.storyboard in Resources */,
+				33FA7FE91C0864610026FFD7 /* Assets.xcassets in Resources */,
+				33FA7FE71C0864610026FFD7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33FA7FF01C0864610026FFD7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -246,6 +432,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		33FA7FD61C0864610026FFD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33FA80061C086C920026FFD7 /* CurrentWeatherInfoModelOC.m in Sources */,
+				33FA80021C0865360026FFD7 /* WeatherAPIManagerOC.m in Sources */,
+				33FA800A1C086F360026FFD7 /* LocationManagerOC.m in Sources */,
+				33FA7FE11C0864610026FFD7 /* AppDelegate.m in Sources */,
+				33FA7FDE1C0864610026FFD7 /* main.m in Sources */,
+				33FA800E1C0872FA0026FFD7 /* WeatherOCViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33FA7FEE1C0864610026FFD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33FA7FF71C0864610026FFD7 /* TinyWeatherObjCTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7EEE60A61C06A5B000435129 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -266,9 +473,30 @@
 			target = 7EEE60A91C06A5B000435129 /* TinyWeather */;
 			targetProxy = 33FA7FCF1C06F2610026FFD7 /* PBXContainerItemProxy */;
 		};
+		33FA7FF41C0864610026FFD7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 33FA7FD91C0864610026FFD7 /* TinyWeatherObjC */;
+			targetProxy = 33FA7FF31C0864610026FFD7 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		33FA7FE51C0864610026FFD7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33FA7FE61C0864610026FFD7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		33FA7FEA1C0864610026FFD7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33FA7FEB1C0864610026FFD7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		7EEE60B11C06A5B000435129 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -309,6 +537,52 @@
 				PRODUCT_BUNDLE_IDENTIFIER = SQ.TinyWeatherTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TinyWeather.app/TinyWeather";
+			};
+			name = Release;
+		};
+		33FA7FF91C0864610026FFD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TinyWeatherObjC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SQ.TinyWeatherObjC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		33FA7FFA1C0864610026FFD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TinyWeatherObjC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SQ.TinyWeatherObjC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		33FA7FFB1C0864610026FFD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TinyWeatherObjCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SQ.TinyWeatherObjCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TinyWeatherObjC.app/TinyWeatherObjC";
+			};
+			name = Debug;
+		};
+		33FA7FFC1C0864610026FFD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TinyWeatherObjCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SQ.TinyWeatherObjCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TinyWeatherObjC.app/TinyWeatherObjC";
 			};
 			name = Release;
 		};
@@ -425,6 +699,25 @@
 				33FA7FD21C06F2610026FFD7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33FA7FFD1C0864610026FFD7 /* Build configuration list for PBXNativeTarget "TinyWeatherObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33FA7FF91C0864610026FFD7 /* Debug */,
+				33FA7FFA1C0864610026FFD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33FA7FFE1C0864610026FFD7 /* Build configuration list for PBXNativeTarget "TinyWeatherObjCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33FA7FFB1C0864610026FFD7 /* Debug */,
+				33FA7FFC1C0864610026FFD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7EEE60A51C06A5B000435129 /* Build configuration list for PBXProject "TinyWeather" */ = {
 			isa = XCConfigurationList;

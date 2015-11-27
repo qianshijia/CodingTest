@@ -13,7 +13,7 @@ class WeatherViewController: UIViewController, LocationManagerProtocol {
     lazy var weatherAPIManager: WeatherAPIManager = WeatherAPIManager(baseURL: "https://api.forecast.io")
     var isShowingCelsius = true
     var labelAnimated = false
-    var WeatherInfo: CurrentWeatherInfoModel?
+    var weatherInfo: CurrentWeatherInfoModel?
     
     //MARK: - IBOutlets
     @IBOutlet weak var tinyWeatherLabel: UILabel!
@@ -48,7 +48,7 @@ class WeatherViewController: UIViewController, LocationManagerProtocol {
         weatherAPIManager.getWeatherInfo(withRequest: apiRequest,
             success: { (responseObject: CurrentWeatherInfoModel?) -> Void in
                 if let response = responseObject {
-                    self.WeatherInfo = response
+                    self.weatherInfo = response
                     self.setUpLabel(withModel: response, isCelsius: self.isShowingCelsius)
                     self.animateLabels()
                 }
@@ -61,7 +61,7 @@ class WeatherViewController: UIViewController, LocationManagerProtocol {
     
     //MARK: - Tap Gesture
     @objc private func didTapOnTemperatureLabel(gesture: UITapGestureRecognizer) {
-        if let model = WeatherInfo {
+        if let model = weatherInfo {
             isShowingCelsius = !isShowingCelsius
             setUpLabel(withModel: model, isCelsius: isShowingCelsius)
         }
